@@ -15,7 +15,7 @@ export function ShopAllBanner() {
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] });
   const y = useTransform(scrollYProgress, [0, 1], ['-8%', '8%']);
   return (
-    <section className="mx-auto max-w-[1400px] px-4 py-12 sm:px-6 sm:py-16 lg:py-24">
+    <section className="mx-auto max-w-[1400px] px-4 py-9 sm:px-6 sm:py-11 lg:py-14">
       <div ref={ref} className="relative grid overflow-hidden rounded-xl bg-surface md:grid-cols-2">
         <div className="relative aspect-[4/3] overflow-hidden md:aspect-auto md:min-h-[560px]">
           <motion.div style={{ y }} className="absolute -inset-y-[10%] inset-x-0">
@@ -45,7 +45,7 @@ export function Newsletter() {
   const [done, setDone] = useState(false);
   return (
     <section className="border-t border-white/10">
-      <Reveal className="mx-auto flex max-w-[1400px] flex-col items-start justify-between gap-8 px-4 py-12 sm:px-6 sm:py-16 lg:flex-row lg:items-center lg:py-20">
+      <Reveal className="mx-auto flex max-w-[1400px] flex-col items-start justify-between gap-8 px-4 py-10 sm:px-6 sm:py-12 lg:flex-row lg:items-center lg:py-14">
         <div>
           <h2 className="font-wide text-[clamp(22px,3.6vw,48px)] leading-none font-extrabold text-white uppercase">Subscribe</h2>
           <p className="mt-2 text-[13px] text-white/55 sm:mt-3 sm:text-[15px]">Be the first to know about new drops and restocks.</p>

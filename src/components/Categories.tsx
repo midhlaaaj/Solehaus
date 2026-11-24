@@ -32,7 +32,7 @@ const COLS = ['md:grid-cols-1', 'md:grid-cols-1', 'md:grid-cols-2', 'md:grid-col
 export default function Categories() {
   const lay = layout(CATEGORIES.length);
   return (
-    <section className="mx-auto max-w-[1400px] px-4 py-12 sm:px-6 sm:py-16 lg:py-24">
+    <section className="mx-auto max-w-[1400px] px-4 py-9 sm:px-6 sm:py-11 lg:py-14">
       <SectionHead title="Shop by category" />
       <div className={`grid grid-cols-2 gap-2.5 sm:gap-3 md:auto-rows-[260px] md:gap-4 lg:auto-rows-[300px] ${COLS[Math.min(CATEGORIES.length, 4)]}`}>
         {CATEGORIES.map((c, i) => {

@@ -375,7 +375,7 @@ export default function ProductDetail({ p }: { p: Product }) {
         </div>
       </div>
 
-      <section className="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 lg:py-20">
+      <section className="mx-auto max-w-[1400px] px-4 py-10 sm:px-6 lg:py-14">
         <SectionHead title="You may also like" />
         <ProductRail items={related(p, 8)} />
       </section>

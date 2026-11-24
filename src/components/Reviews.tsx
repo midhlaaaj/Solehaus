@@ -142,7 +142,7 @@ export default function Reviews() {
   }, [open]);
 
   return (
-    <section className="overflow-hidden py-12 sm:py-16 lg:py-24">
+    <section className="overflow-hidden py-9 sm:py-11 lg:py-14">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
         <SectionHead
           title="Customer love"

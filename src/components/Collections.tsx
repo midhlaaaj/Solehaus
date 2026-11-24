@@ -11,7 +11,7 @@ import { SectionHead } from './Reveal';
 
 export function Bestsellers() {
   return (
-    <section className="mx-auto max-w-[1400px] px-4 py-12 sm:px-6 sm:py-16 lg:py-24">
+    <section className="mx-auto max-w-[1400px] px-4 py-9 sm:px-6 sm:py-11 lg:py-14">
       <SectionHead
         title="Bestsellers"
         sub="The pairs our customers reorder most."
@@ -30,7 +30,7 @@ export function ShopByCollection() {
   const [tab, setTab] = useState<Category>(TABS[0]?.slug ?? 'sneakers');
   const items = byCatFresh(tab);
   return (
-    <section className="mx-auto max-w-[1400px] px-4 py-12 sm:px-6 sm:py-16 lg:py-24">
+    <section className="mx-auto max-w-[1400px] px-4 py-9 sm:px-6 sm:py-11 lg:py-14">
       <SectionHead title="Shop the collection" action={<ViewAll href={`/shop/${tab}`} label={`All ${tab}`} />} />
       <div role="tablist" aria-label="Category" className="-mx-4 mb-6 flex gap-2 sm:mb-8 overflow-x-auto px-4 [scrollbar-width:none] sm:mx-0 sm:px-0">
         {TABS.map((t) => (
